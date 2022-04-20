@@ -6,13 +6,13 @@
   margin-top: -30px;
 }
 
-.clients-list-item {
+.clients-list__item {
   flex-basis: calc((100% - 180px) / 6);
   margin-left: 30px;
   margin-top: 30px;
 }
 
-.clients-list-link {
+.clients-list__link {
   display: flex;
   justify-content: center;
   width: 170px;
@@ -29,6 +29,6 @@
   }
 }
 
-.clients-list-icon {
+.clients-list__icon {
   align-self: center;
 }

@@ -5,11 +5,11 @@
   min-width: 610px;
 }
 
-.filters-list-item:not(:last-child) {
+.filters-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
-.filters-btn {
+.filters-list__btn {
   padding: 6px 22px;
   min-width: 30px;
   font-family: inherit;

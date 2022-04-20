@@ -9,10 +9,10 @@
 
 .features-list-item {
   width: 270px;
-}
 
-.features-list-item:not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features-icon-wraper {

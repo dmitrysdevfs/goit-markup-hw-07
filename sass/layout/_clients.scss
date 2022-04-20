@@ -21,14 +21,14 @@
   border: 1px solid var(--social-list-icon-color);
   border-radius: 4px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    fill: var(--primary-accent-color);
+    border-color: var(--primary-accent-color);
+  }
 }
 
 .clients-list-icon {
   align-self: center;
-}
-
-.clients-list-link:hover,
-.clients-list-link:focus {
-  fill: var(--primary-accent-color);
-  border-color: var(--primary-accent-color);
 }

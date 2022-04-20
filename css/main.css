@@ -133,14 +133,13 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.social-list-link:hover, .social-list-link:focus {
+  background-color: var(--primary-accent-color);
+}
+
 .social-list-icon {
   fill: var(--social-list-icon-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--primary-accent-color);
 }
 
 .social-list-link:hover .social-list-icon,
@@ -386,8 +385,10 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-list-link:hover,
-.nav-list-link:focus,
+.nav-list-link:hover, .nav-list-link:focus {
+  color: var(--primary-accent-color);
+}
+
 .current {
   color: var(--primary-accent-color);
 }
@@ -475,8 +476,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal-btn:hover, .modal-btn:focus {
   background-color: var(--secondary-accent-color);
 }
 
@@ -630,14 +630,13 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-icon {
-  align-self: center;
-}
-
-.clients-list-link:hover,
-.clients-list-link:focus {
+.clients-list-link:hover, .clients-list-link:focus {
   fill: var(--primary-accent-color);
   border-color: var(--primary-accent-color);
+}
+
+.clients-list-icon {
+  align-self: center;
 }
 
 .footer {
@@ -711,8 +710,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer .social-list-link:hover,
-.footer .social-list-link:focus {
+.footer .social-list-link:hover, .footer .social-list-link:focus {
   background-color: var(--primary-accent-color);
 }
 
@@ -785,8 +783,7 @@ img {
   background: url("../images/subscribe-icon.svg") no-repeat;
 }
 
-.subscribe-form-submit-btn:hover,
-.subscribe-form-submit-btn:focus {
+.subscribe-form-submit-btn:hover, .subscribe-form-submit-btn:focus {
   background-color: var(--secondary-accent-color);
 }
 
@@ -818,8 +815,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filters-btn:hover,
-.filters-btn:focus {
+.filters-btn:hover, .filters-btn:focus {
   color: var(--contrast-accent-color);
   background-color: var(--primary-accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -841,6 +837,11 @@ img {
 
 .project-card {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.projects-list-link:hover .project-card,
+.projects-list-link:focus .project-card {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-card-img-wrapper {
@@ -868,6 +869,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.projects-list-link:hover .project-card-overlay,
+.projects-list-link:focus .project-card-overlay {
+  transform: translateY(0%);
+}
+
 .project-discription {
   min-height: 110px;
   padding: 20px 24px;
@@ -887,15 +893,5 @@ img {
 
 .projects-list-link {
   color: currentColor;
-}
-
-.projects-list-link:hover .project-card,
-.projects-list-link:focus .project-card {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-
-.projects-list-link:hover .project-card-overlay,
-.projects-list-link:focus .project-card-overlay {
-  transform: translateY(0%);
 }
 /*# sourceMappingURL=main.css.map */
